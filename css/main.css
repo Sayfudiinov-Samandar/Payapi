@@ -369,12 +369,6 @@ main {
   flex-grow: 1;
 }
 
-.container {
-  min-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -387,4 +381,11 @@ main {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  min-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
 }/*# sourceMappingURL=main.css.map */
