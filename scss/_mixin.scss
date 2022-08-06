@@ -1,4 +1,4 @@
-@mixin links ($display:block, $padding: 0, $margin: 0){
+@mixin links ($display:inline-block, $padding: 0, $margin: 0){
     display: $display;
     padding: $padding;
     margin: $margin;
