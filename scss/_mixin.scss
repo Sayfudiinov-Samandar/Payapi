@@ -28,5 +28,11 @@
     color: $btn-txt-color;
 }
 
+@mixin mobile-first($min) {
+    @media only screen and (min-width:$min) {
+        @content;
+    }
+}
+
 
 
