@@ -1,0 +1,29 @@
+@mixin links ($display:black, $padding: 0, $margin: 0){
+    display: $display;
+    padding: $padding;
+    margin: $margin;
+    text-decoration: none;
+}
+
+
+@mixin dsp-flx ($dsp: flex, $jus-con: space-between, $alg-itm: center) {
+    display: $dsp;
+    justify-content: $jus-con;
+    align-items: $alg-itm;
+}
+
+@mixin site-btns ($btn-pading-top-bot: 15px, $btn-pading-left-right: 25px, $btn-bg-color: #BA4270, $btn-box-shad: 10px 10px 25px -10px #36536b40, $btn-borde-rr: 24px, $btn-font-family: 'Public Sans', $btn-fnt-size: 15px, $btn-ln-height: 18px, $btn-txt-color: #FBFCFE) {
+    padding: $btn-pading-top-bot $btn-pading-left-right;
+    background-color: $btn-bg-color;
+    box-shadow: $btn-box-shad;
+    border-radius: $btn-borde-rr;
+    border: none;
+    font-family: $btn-font-family;
+    font-weight: 700;
+    font-size: $btn-fnt-size;
+    line-height: $btn-ln-height;
+    color: $btn-txt-color;
+}
+
+
+
