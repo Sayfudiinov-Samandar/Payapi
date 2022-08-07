@@ -553,4 +553,132 @@ main {
   .hero__left {
     margin-right: 128px;
   }
+}
+.work {
+  padding: 80px 0;
+  background-color: #1b262f;
+  background-image: url("../images/hero-bg-img.svg");
+  background-size: 855px;
+  background-position: center calc(50% - 584px);
+  background-repeat: no-repeat;
+}
+
+.work__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.work__box {
+  max-width: 456px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work__title {
+  margin-bottom: 16px;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.246154px;
+  color: #fbfcfe;
+}
+
+.work__text {
+  margin-bottom: 60px;
+  font-size: 15px;
+  line-height: 28px;
+  color: #fbfcfe;
+  opacity: 0.7;
+}
+
+.work__link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 32px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #fbfcfe;
+  border: 1px solid #fbfcfe;
+  border-radius: 24px;
+  transition: all 0.2s ease-in;
+}
+
+.work__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.work__item {
+  margin-bottom: 44px;
+  margin-right: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .work {
+    background-size: 1000px;
+  }
+  .work__list {
+    max-width: 600px;
+  }
+  .work__item {
+    margin-right: 62px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .work {
+    background-position: calc(50% - 521px) calc(50% - 275px);
+  }
+  .work__wrapper {
+    flex-direction: row;
+  }
+  .work__box {
+    text-align: left;
+  }
+  .work__title {
+    font-size: 48px;
+  }
+  .work__link:hover {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: #1b262f;
+    background-color: #fff;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .work {
+    padding: 100px 0;
+    background-position: calc(50% - 521px) calc(50% - 275px);
+  }
+  .work__list {
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .work__box {
+    margin-right: 35px;
+  }
+  .work__list {
+    max-width: 600px;
+  }
+}
+@media only screen and (min-width: 1750px) {
+  .work {
+    background-size: 1109px;
+    background-position: center;
+    background-position: calc(50% - 677px) calc(50% - 328px);
+  }
 }/*# sourceMappingURL=main.css.map */
