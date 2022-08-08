@@ -29,7 +29,7 @@
     text-align: center;
 }
 
-.hero__form{
+.hero-form{
     margin-bottom: 24px;
 }
 
@@ -44,7 +44,7 @@
     color: $color-san-juan-blue;
 }
 
-.hero__input{
+.hero-input{
     display: block;
     width: 100%;
     margin-bottom: 16px;
@@ -65,7 +65,7 @@
 
 
 
-.hero__link{
+.hero-link{
     @include site-btns;
     @include links;
     width: 100%;
@@ -95,16 +95,16 @@
         line-height: $text-font-height-56;
     }
 
-    .hero__form{
+    .hero-form{
         padding: 0 55px;
         position: relative;
     }
 
-    .hero__input{
+    .hero-input{
         margin-bottom: 0;
     }
 
-    .hero__link{
+    .hero-link{
         position: absolute;
         width: 200px;
         top: 0;
@@ -131,7 +131,7 @@
         line-height: 72px;
     }
 
-    .hero__form{
+    .hero-form{
         padding-left: 0;
     }
 
