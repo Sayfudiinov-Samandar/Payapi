@@ -1,2 +1,147 @@
-/* ----------------- About html scss code start ----------------------------*/
+
+.site-header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.site-header__logo{
+    margin-right: 64px;
+}
+
+
+.site-header__nav{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: -20px;
+    width: 90%;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    // background-color: #1b262fed;
+    background-color: rgba(27, 38, 47, 1);
+    padding-top:100px;
+    padding-bottom: 312px; 
+    border-top: 1px solid $color-water-white;
+    animation: menu 2s ease-in-out;
+}
+
+@keyframes menu{
+    0%{
+        width: 0%;
+        transform: translateX(+400px);
+    }
+
+    50%{
+        width: 90%;
+        transform: translateX(0px);
+    }
+}
+
+.hamburg-active .site-header__nav{
+    display: flex;
+}
+
+.site-nav{
+    padding-top: 55px
+}
+
+.nav__list{
+    @include list-unstyle;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav__item{
+    text-align: center;
+    margin-bottom: 32px;
+    
+}
+
+.nav__link{
+    @include links;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    color: $color-water-white;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    
+}
+
+.demo{
+    @include links;
+    @include site-btns;
+    margin: 0 auto;
+}
+
+.open{
+    
+    z-index: 15;
+    width: 28px;
+    height: 18px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../images/hamburg.svg");
+    background-repeat: no-repeat;
+}
+
+.hamburg-active .open{
+    position: fixed;
+    right: 10px;
+    height: 30px;
+    background-image: url("../images/close.svg");
+}
+
+
+@include mobile-first(768px){
+    .open{
+        display: none;
+    }
+    .site-header__nav{
+        display: flex;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: transparent;
+        height: auto;
+        padding: 0;
+        border: none;
+    }
+    
+    .site-nav{
+        padding: 0;
+    }
+    .nav__list{
+        flex-direction: row;
+    }
+    
+    .nav__item{
+        margin: 0;
+        &:not(:last-child){
+            margin-right: 40px;
+        }
+    }
+    
+    .nav__link{
+        font-size: 15px;
+        color: #36536B;
+        opacity: 0.7;
+    }
+    .demo{
+        margin: 0;
+    }
+    
+}
+
+
+
 

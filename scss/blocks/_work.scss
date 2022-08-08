@@ -74,9 +74,16 @@
         background-size: 1000px;
     }
     
+    .work__list{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    
     .work__item{
         margin-right: 62px;
     }
+
 }
 
 @include mobile-first(1035px){
