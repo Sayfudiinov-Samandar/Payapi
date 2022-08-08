@@ -1,0 +1,158 @@
+
+.hero{
+    padding: 80px 0;
+    background-color: #F2F2F2;
+    background-image: url(../images/hero-bg-img.svg);
+    background-size: 855px;
+    background-position: center calc(50% - 584px);
+    background-repeat: no-repeat;
+}
+
+.hero__box{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.hero__right{
+    display: flex;
+    justify-content: center;
+}
+
+.hero__phone{
+    width: 248px;
+    height: 400px;
+}
+
+.hero__left{
+    max-width: 573px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero__form{
+    margin-bottom: 24px;
+}
+
+.hero__title{
+    margin-bottom: 24px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $text-font-32;
+    line-height: 36px;
+    letter-spacing: -0.246154px;
+    color: $color-san-juan-blue;
+}
+
+.hero__input{
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 15px 27px;
+    background-color: $color-water-white;
+    border: none;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    
+    &::placeholder{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: $color-san-juan-blue;
+        opacity: .5;
+    }
+}
+
+
+
+.hero__link{
+    @include site-btns;
+    @include links;
+    width: 100%;
+}
+
+.hero__question{
+    font-size: 15;
+    line-height: 18px;
+    color: $color-light-san-juan-blue;
+}
+
+.hero__contact{
+    @include links;
+    font-weight: 700;
+    color: inherit;
+}
+
+
+@include mobile-first(768px){
+    .hero__phone{
+        width: 350px;
+        height: 500px;
+    }
+    
+    .hero__title{
+        font-size: $text-font-48;
+        line-height: $text-font-height-56;
+    }
+
+    .hero__form{
+        padding: 0 55px;
+        position: relative;
+    }
+
+    .hero__input{
+        margin-bottom: 0;
+    }
+
+    .hero__link{
+        position: absolute;
+        width: 200px;
+        top: 0;
+        right: 48px;
+    }
+}
+
+@include mobile-first(1024px){
+
+    .hero{
+        background-size: 900px;
+        background-position: calc(50% + 545px) calc(50% - 322px);
+    }
+
+    .hero__box{
+        flex-direction: row;
+       
+        align-items: center;
+    }
+    
+    .hero__title{
+        margin-bottom: 40px;
+        font-size: $text-font-72;
+        line-height: 72px;
+    }
+
+    .hero__form{
+        padding-left: 0;
+    }
+
+    .hero__question{
+        padding-left: 25px;
+    }
+
+    .hero__left{
+        margin-right: 69px;
+        max-width: 546px;
+        text-align: left;
+    }
+
+    .hero__phone{
+        width: 385px;
+        height: 600px;
+    }
+
+}
+
+@include mobile-first(1200px){
+    .hero__left{
+        margin-right: 128px;
+    }
+}
