@@ -114,10 +114,14 @@
 
 .easy__ready{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    flex-direction: column; 
+    // align-items: center;   
 }
+
+.easy__title{
+    text-align: center;
+}
+
 
 
 @include mobile-first(500px){
@@ -206,6 +210,7 @@
     
     .easy__ready{
         display: grid;
+        align-items: center;
         grid-row: 1;
         grid-template-columns: 1fr 1fr;
         padding: 0;
