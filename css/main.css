@@ -973,7 +973,10 @@ main {
 .easy__ready {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.easy__title {
+  text-align: center;
 }
 
 @media only screen and (min-width: 500px) {
@@ -1046,6 +1049,7 @@ main {
   }
   .easy__ready {
     display: grid;
+    align-items: center;
     grid-row: 1;
     grid-template-columns: 1fr 1fr;
     padding: 0;
