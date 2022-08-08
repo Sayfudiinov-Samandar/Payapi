@@ -1,0 +1,21 @@
+.pric-box__tlt{
+    margin: 0;
+    margin-bottom: 72px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    color: #36536B;    
+}
+.pric-box__list{
+    @include list-unstyle;
+}
+
+
+.pric-box__itm-tlt{
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #BA4270;    
+}
