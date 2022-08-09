@@ -280,9 +280,7 @@ hr{
         max-width: 730px;
     }
 
-    .input-box__input{
-        padding-right: 210px;
-    }
+ 
     .pric-box__list{
         display: flex;
         justify-content: space-evenly;
@@ -330,6 +328,11 @@ hr{
         width: 200px;
         top: 0;
         right: 0;
+    }
+
+
+    .ready-box__input{
+        padding-right: 210px;
     }
 
 }

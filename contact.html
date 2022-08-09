@@ -13,10 +13,7 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container">
-        </div>
-    </header>
+
 
     <main class="site-main">
 
@@ -72,7 +69,7 @@
                 <div class="input-box">
                     <form class="input-box__form" action="https://echo.htmlacademy.ru/courses" autocomplete="off">
                         <label class="input-box__lable">
-                            <input class="input-box__input" name="user_name" type="text" placeholder="Name" aria-label="Your name" required>
+                            <input class="input-box__input" name="user_name" type="text" placeholder="Name" maxlength="100" minlength="2"  aria-label="Your name" required>
                             <span class="input-box__invalid-text">This field can’t be empty</span>
                         </label>
                         <label class="input-box__lable">
@@ -80,19 +77,78 @@
                             <span class="input-box__invalid-text">This field can’t be empty</span>
                         </label>
                         <label class="input-box__lable">
-                            <input class="input-box__input" name="user_company-name" type="text" placeholder="Company Name" aria-label="Company Name" required>
+                            <input class="input-box__input" name="user_company-name" type="text" maxlength="100" minlength="2"  placeholder="Company Name" aria-label="Company Name" required>
                             <span class="input-box__invalid-text">This field can’t be empty</span>
                         </label>
                         <label class="input-box__lable">
-                            <input class="input-box__input" name="user_title" type="text" placeholder="Title" aria-label="Title" required>
+                            <input class="input-box__input" name="user_title" maxlength="100" minlength="2"  type="text" placeholder="Title" aria-label="Title" required>
                             <span class="input-box__invalid-text">This field can’t be empty</span>
                         </label>
-                        <textarea class="input-box__input input-box__input__txt-area"  name="user_message" cols="30" rows="10" placeholder="Message"></textarea>
-                    
-                        
+                        <textarea class="input-box__input input-box__input__txt-area" maxlength="100" minlength="2" name="user_message" cols="30" rows="10" placeholder="Message"></textarea>
+
+
+
+                        <label class="input-box__check-label">
+                            <input class="input-box__check" type="checkbox" aria-label="Stay up-to-date with company announcements and updates to our API" name="user_check">
+                                <span class="input-box__chek-img"></span>
+                                <span class="input-box__check-txt"> 
+                                    Stay up-to-date with company announcements and updates to our API
+                                </span>
+                        </label>
+
+                        <button class="input-box__btn" type="submit">
+                            Submit                            
+                        </button>
+
                     </form>
 
+                    <div class="input-box__right brends">
+                        <h3 class="brends__tlt">   
+                            Join the thousands of innovators already building with us
+                        </h3>
 
+                        <div class="brends__logoes">
+                            <a class="brends__link" href="#">
+                                <img class="brends__img" src="./images/tesla-dark.svg" width="130" height="17" alt="Logo Tesla">
+                            </a>
+                            <a class="brends__link" href="#">
+                                <img class="brends__img" src="./images/microsoft-dark.svg" width="146" height="31" alt="Logo Microsoft">
+                            </a>
+                            <a class="brends__link" href="#">
+                                <img class="brends__img" src="./images/hp-dark.svg" width="141" height="27" alt="Logo Hp">
+                            </a>
+                            <a class="brends__link" href="#">
+                                <img class="brends__img" src="./images/orange-dark.svg" width="132" height="17" alt="Logo Orange">
+                            </a>
+                            <a class="brends__link" href="#">
+                                <img class="brends__img" src="./images/google-dark.svg" width="96" height="33" alt="Logo Google">
+                            </a>
+                            <a class="brends__link" href="#">
+                                <img class="brends__img" src="./images/nvida-dark.svg" width="138" height="26" alt="Logo Nvida">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="ready-section ready-section--active">
+            <div class="container">
+                <div class="ready-box">
+                    <h3 class="ready-box__tlt">
+                        Ready to start?
+                    </h3>
+                    <form class="ready-box__form" action="https://echo.htmlacademy.ru/courses" autocomplete="off"
+                        method="post">
+                        <label class="ready-box__label">
+                            <input class="ready-box__input" type="email" required name="emaila"
+                                placeholder="Enter email address">
+                        </label>
+                        <button type="submit" class="ready-box__link">
+                            Schedule a Demo
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -177,6 +233,9 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
