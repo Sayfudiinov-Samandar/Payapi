@@ -2,8 +2,6 @@
     padding-bottom: 80px;
 }
 
-
-
 .ready__title {
     margin: 0;
     padding-bottom: 32px;
@@ -50,6 +48,10 @@
     border: transparent;
     cursor: pointer;
 
+    &:hover {
+        background-color: #DA6D97;
+    }
+
 }
 
 @include mobile-first (710px) {
@@ -90,6 +92,7 @@
     }
 
 }
+
 
 @include mobile-first (1000px) {
     .ready {
@@ -136,8 +139,10 @@
 
     }
 
-    .ready-section--about{
-        padding-bottom: 100px;
+    .ready__btn:hover {
+        background-color: #DA6D97;
     }
 
-}
+    
+    
+    }
