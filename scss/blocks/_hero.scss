@@ -150,6 +150,12 @@
         height: 600px;
     }
 
+    .hero-link{
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+
 }
 
 @include mobile-first(1200px){

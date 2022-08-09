@@ -545,6 +545,15 @@ main {
     margin: 0;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .nav__link:hover {
+    color: #36536b;
+    opacity: 1;
+  }
+  .demo:hover {
+    opacity: 0.9;
+  }
+}
 .hero {
   padding: 40px 0;
   background-color: #edf3f8;
@@ -703,6 +712,9 @@ main {
   .hero__phone {
     width: 385px;
     height: 600px;
+  }
+  .hero-link:hover {
+    opacity: 0.9;
   }
 }
 @media only screen and (min-width: 1200px) {
