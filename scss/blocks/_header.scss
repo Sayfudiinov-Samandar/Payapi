@@ -142,6 +142,21 @@
     
 }
 
+@include mobile-first(1024px){
+    .nav__link{
+        &:hover{
+            color: #36536b;
+            opacity: 1;
+        }
+    }
+
+    .demo{
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+}
+
 
 
 
