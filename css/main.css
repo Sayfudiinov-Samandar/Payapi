@@ -1067,10 +1067,15 @@ main {
 }
 .pric-hero {
   padding-bottom: 48px;
+  background-image: url("../images/hero-bg-img.svg");
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-position: calc(50% + 380px) -590px;
 }
 
 .pric-box__tlt {
   margin: 0;
+  padding: 40px 0 0 0;
   font-family: "DM Serif Display";
   font-weight: 400;
   font-size: 56px;
@@ -1353,6 +1358,9 @@ hr {
 }
 
 @media only screen and (min-width: 800px) {
+  .pric-hero {
+    background-position: calc(50% + 444px) -535px;
+  }
   .pric-box__list {
     display: flex;
     justify-content: space-evenly;
