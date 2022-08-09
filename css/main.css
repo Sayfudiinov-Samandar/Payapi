@@ -406,7 +406,7 @@ main {
   display: none;
   position: fixed;
   z-index: 10;
-  top: 0;
+  top: -2px;
   right: -20px;
   width: 90%;
   bottom: 0;
