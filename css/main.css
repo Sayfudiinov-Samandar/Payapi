@@ -1380,6 +1380,9 @@ hr {
   .pric-box__tlt {
     max-width: 730px;
   }
+  .input-box__input {
+    padding-right: 210px;
+  }
   .pric-box__list {
     display: flex;
     justify-content: space-evenly;
@@ -2070,6 +2073,16 @@ hr {
 .pric-box__tlt--active {
   font-size: 32px;
   line-height: 36px;
+}
+
+.input-box__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box__lable {
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 600px) {

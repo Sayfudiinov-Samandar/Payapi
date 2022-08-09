@@ -4,6 +4,17 @@
     line-height: 36px;
 }
 
+.input-box__form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-box__lable{
+    display: flex;
+    flex-direction: column;
+}
+
 
 @include mobile-first(600px){
     .pric-box__tlt--active{
