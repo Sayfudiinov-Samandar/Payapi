@@ -1373,6 +1373,13 @@ hr {
   .pric-hero {
     background-position: calc(50% + 444px) -535px;
   }
+  .pric-box {
+    width: 100%;
+    max-width: 1000px;
+  }
+  .pric-box__tlt {
+    max-width: 730px;
+  }
   .pric-box__list {
     display: flex;
     justify-content: space-evenly;
@@ -1423,7 +1430,7 @@ hr {
     gap: 30px;
   }
   .pric-box__item {
-    max-width: 350px;
+    max-width: 650px;
   }
   .pric-box__itm-tlt {
     text-align: left;
@@ -2058,6 +2065,29 @@ hr {
     margin-left: -90px;
     padding: 16px 24px;
     z-index: 2;
+  }
+}
+.pric-box__tlt--active {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+@media only screen and (min-width: 600px) {
+  .pric-box__tlt--active {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .pric-box__tlt--active {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .pric-box__tlt--active {
+    font-size: 56px;
+    line-height: 56px;
   }
 }
 .footer-wrapper {

@@ -271,6 +271,15 @@ hr{
         background-position: calc(50% + 444px) -535px;
     }
 
+    .pric-box{
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .pric-box__tlt{
+        max-width: 730px;
+    }
+
 
     .pric-box__list{
         display: flex;
@@ -335,7 +344,7 @@ hr{
         gap: 30px;
     }
     .pric-box__item{
-        max-width: 350px;
+        max-width: 650px;
     }
     
     .pric-box__itm-tlt{
