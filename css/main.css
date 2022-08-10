@@ -1467,6 +1467,21 @@ hr {
     margin-right: 0;
   }
 }
+.about-hero {
+  background-image: url("../../images/headerimg.png");
+  background-size: 780px;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 400px) calc(10% - 580px);
+}
+
+@media only screen and (min-width: 1000px) {
+  .about-hero {
+    background-position: calc(50% + 470px) calc(10% - 540px);
+  }
+  .about-hero__title-box {
+    padding-top: 46px;
+  }
+}
 .about-hero__wrapper {
   display: block;
   justify-content: start;
@@ -1970,6 +1985,7 @@ hr {
 
 .ready__input {
   width: 100%;
+  margin-bottom: 16px;
   padding: 16px 27px 16px 27px;
   outline: none;
   border: none;
@@ -1985,7 +2001,7 @@ hr {
 
 .ready__btn {
   margin: 0 auto;
-  padding: 15px 50px;
+  padding: 15px 75px;
   display: flex;
   justify-content: center;
   font-weight: 700;
