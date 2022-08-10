@@ -676,6 +676,7 @@ main {
   }
   .hero-input {
     margin-bottom: 0;
+    padding-right: 205px;
   }
   .hero-link {
     position: absolute;
